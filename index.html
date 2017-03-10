@@ -5,56 +5,90 @@
     <title>todos</title>
 </head>
 <body>
-    <div class="wrapper">
+<div class="wrapper">
+    <div class="main-header">
         <h1 class="main-title">todos</h1>
-        <div class="main-content">
-            <div class="task-add">
-                <img src="#" class="select_all_button">
-                <input type="text" class="task-add-input" placeholder="Whats needs to be done?">
+    </div>
+    <div class="main-content">
+        <div class="task-add">
+            <button class="task-select_all_button"
+                    aria-label="Отметить все, как выполенные"></button>
+
+            <input type="text" class="task-add_input" placeholder="Whats needs to be done?"
+                   aria-label="Поле добавления задачи">
+        </div>
+
+        <ul class="task-list">
+            <li class="task-item">
+                <input type="checkbox" class="item-check_button"
+                       aria-label="Отметить задачу, как выполненную">
+
+                <textarea class="item-text">
+                    HTML
+                </textarea>
+
+                <button class="item-close_button"
+                        aria-label="Удалить задачу"></button>
+            </li>
+
+            <li class="task-item __checked">
+                <input type="checkbox" class="item-check_button"
+                       aria-label="Отметить задачу, как выполненную" checked>
+
+                <textarea class="item-text">
+                    CSS
+                </textarea>
+
+                <button class="item-close_button"
+                        aria-label="Удалить задачу"></button>
+            </li>
+
+            <li class="task-item">
+                <input type="checkbox" class="item-check_button"
+                       aria-label="Отметить задачу, как выполненную">
+
+                <textarea class="item-text">
+                    JS
+                </textarea>
+
+                <button class="item-close_button"
+                        aria-label="Удалить задачу"></button>
+            </li>
+
+            <li class="task-item">
+                <input type="checkbox" class="item-check_button"
+                       aria-label="Отметить задачу, как выполненную">
+
+                <textarea class="item-text">
+                    JS tools
+                </textarea>
+
+                <button class="item-close_button"
+                        aria-label="Удалить задачу"></button>
+            </li>
+        </ul>
+
+        <nav class="nav-footer">
+            <div class="nav-left">
+                <div class="nav-item">3 items left</div>
             </div>
 
-            <ul class="task-list">
-                <li class="task-item">
-                    <img src="#" class="item-check_button">
-                    <a href="#" class="item-title">HTML</a>
-                    <img src="#" class="item-close_button">
-                </li>
+            <div class="nav-center">
+                <button class="nav-item __active" data-filter="all"
+                        aria-label="Фильтр: показать все">All</button>
 
-                <li class="task-item checked">
-                    <img src="#" class="item-check_button">
-                    <a href="#" class="item-title">CSS</a>
-                    <img src="#" class="item-close_button">
-                </li>
+                <button class="nav-item" data-filter="checked"
+                        aria-label="Фильтр: показать выполненные">Active</button>
 
-                <li class="task-item">
-                    <img src="#" class="item-check_button">
-                    <a href="#" class="item-title">JS</a>
-                    <img src="#" class="item-close_button">
-                </li>
+                <button class="nav-item" data-filter="unchecked"
+                        aria-label="Фильтр: показать невыполненные">Completed</button>
+            </div>
 
-                <li class="task-item">
-                    <img src="#" class="item-check_button">
-                    <a href="#" class="item-title">JS tools</a>
-                    <img src="#" class="item-close_button">
-                </li>
-            </ul>
-
-            <nav class="nav-footer">
-                <div class="nav-left">
-                    <p class="nav-item">3 items left</p>
-                </div>
-
-                <div class="nav-center">
-                    <a href="#" class="nav-item active">All</a>
-                    <a href="#" class="nav-item">Active</a>
-                    <a href="#" class="nav-item">Completed</a>
-                </div>
-
-                <div class="nav-right">
-                    <a href="#" class="nav-item">Clear completed</a>
-                </div>
-            </nav>
-        </div>
+            <div class="nav-right">
+                <button class="nav-item">Clear completed</button>
+            </div>
+        </nav>
     </div>
+</div>
 </body>
 </html>

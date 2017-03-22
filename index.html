@@ -18,55 +18,47 @@
                    aria-label="Поле добавления задачи">
         </div>
 
-        <ul class="task-list">
-            <li class="task-item">
+        <div class="task-list">
+            <div class="task-item">
                 <input type="checkbox" class="item-check_button"
                        aria-label="Отметить задачу, как выполненную">
 
-                <textarea class="item-text">
-                    HTML
-                </textarea>
+                <textarea class="item-text">HTML</textarea>
 
                 <button class="item-close_button"
                         aria-label="Удалить задачу"></button>
-            </li>
+            </div>
 
-            <li class="task-item __checked">
+            <div class="task-item __ready">
                 <input type="checkbox" class="item-check_button"
                        aria-label="Отметить задачу, как выполненную" checked>
 
-                <textarea class="item-text">
-                    CSS
-                </textarea>
+                <textarea class="item-text">CSS</textarea>
 
                 <button class="item-close_button"
                         aria-label="Удалить задачу"></button>
-            </li>
+            </div>
 
-            <li class="task-item">
+            <div class="task-item">
                 <input type="checkbox" class="item-check_button"
                        aria-label="Отметить задачу, как выполненную">
 
-                <textarea class="item-text">
-                    JS
-                </textarea>
+                <textarea class="item-text">JS</textarea>
 
                 <button class="item-close_button"
                         aria-label="Удалить задачу"></button>
-            </li>
+            </div>
 
-            <li class="task-item">
+            <div class="task-item">
                 <input type="checkbox" class="item-check_button"
                        aria-label="Отметить задачу, как выполненную">
 
-                <textarea class="item-text">
-                    JS tools
-                </textarea>
+                <textarea class="item-text">JS tools</textarea>
 
                 <button class="item-close_button"
                         aria-label="Удалить задачу"></button>
-            </li>
-        </ul>
+            </div>
+        </div>
 
         <nav class="nav-footer">
             <div class="nav-left">
@@ -75,13 +67,16 @@
 
             <div class="nav-center">
                 <button class="nav-item __active" data-filter="all"
-                        aria-label="Фильтр: показать все">All</button>
+                        aria-label="Фильтр: показать все">All
+                </button>
 
                 <button class="nav-item" data-filter="checked"
-                        aria-label="Фильтр: показать выполненные">Active</button>
+                        aria-label="Фильтр: показать выполненные">Active
+                </button>
 
                 <button class="nav-item" data-filter="unchecked"
-                        aria-label="Фильтр: показать невыполненные">Completed</button>
+                        aria-label="Фильтр: показать невыполненные">Completed
+                </button>
             </div>
 
             <div class="nav-right">
